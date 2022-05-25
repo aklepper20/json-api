@@ -1,0 +1,82 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "first_name": "Robert",
+      "last_name": "Schwartz",
+      "email": "rob23@gmail.com"
+    },
+    {
+      "id": 2,
+      "first_name": "Lucy",
+      "last_name": "Ballmer",
+      "email": "lucyb56@gmail.com"
+    },
+    {
+      "id": 3,
+      "first_name": "Anna",
+      "last_name": "Smith",
+      "email": "annasmith23@gmail.com"
+    },
+    {
+      "id": 4,
+      "first_name": "Robert",
+      "last_name": "Brown",
+      "email": "bobbrown432@yahoo.com"
+    },
+    {
+      "id": 5,
+      "first_name": "Roger",
+      "last_name": "Bacon",
+      "email": "rogerbacon12@yahoo.com"
+    },
+    {
+      "id": 6,
+      "first_name": "Ronny",
+      "last_name": "Jackson",
+      "email": "ronni@gmail.com"
+    },
+    {
+      "id": 7,
+      "first_name": "Alex",
+      "last_name": "Beck",
+      "email": "AB@gmail.com"
+    },
+    {
+      "id": 8,
+      "first_name": "Annabelle",
+      "last_name": "Smithson",
+      "email": "annieSmithson@gmail.com"
+    },
+    {
+      "id": 9,
+      "first_name": "Bobbie",
+      "last_name": "Blacker",
+      "email": "bobblacker@yahoo.com"
+    },
+    {
+      "id": 10,
+      "first_name": "James",
+      "last_name": "Jepper",
+      "email": "JJ12@yahoo.com"
+    }
+  ],
+
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
