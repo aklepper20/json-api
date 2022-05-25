@@ -1,22 +1,58 @@
 {
   "users": [
     {
-      "first_name": "nugget",
-      "last_name": "chicken",
-      "email": "duhhh",
+      "first_name": "Heath",
+      "last_name": "Lehman",
+      "email": "h",
       "id": 1
+    },
+    {
+      "first_name": "Cody",
+      "last_name": "Klepper",
+      "email": "h@gmail.com",
+      "id": 2
+    },
+    {
+      "first_name": "Krisitin",
+      "last_name": "Ramier",
+      "email": "aaa",
+      "id": 3
+    },
+    {
+      "first_name": "aly",
+      "last_name": "baez",
+      "email": "gfd",
+      "id": 4
+    },
+    {
+      "first_name": "nicole",
+      "last_name": "don",
+      "email": "fff",
+      "id": 5
+    },
+    {
+      "first_name": "Nicole",
+      "last_name": "Don",
+      "email": "",
+      "id": 6
+    },
+    {
+      "first_name": "Nug",
+      "last_name": "Nugget",
+      "email": "",
+      "id": 7
+    },
+    {
+      "first_name": "Aly",
+      "last_name": "Gilbert",
+      "email": "",
+      "id": 8
     },
     {
       "first_name": "Alyssa",
       "last_name": "Klepper",
-      "email": "",
-      "id": 3
-    },
-    {
-      "first_name": "zack",
-      "last_name": "hungry",
-      "email": "aaaaa",
-      "id": 4
+      "email": "alyklepper1@gmail.com",
+      "id": 9
     }
   ],
   "posts": [

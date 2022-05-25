@@ -12,8 +12,8 @@ function PostUser() {
   const handleSubmit = () => {
     axios
       .post("http://localhost:3000/users", {
-        first_name: userFirst,
-        last_name: userLast,
+        first_name: userFirst.charAt(0).toUpperCase() + userFirst.slice(1),
+        last_name: userLast.charAt(0).toUpperCase() + userLast.slice(1),
         email: userEmail,
       })
       .then((resp) => {
