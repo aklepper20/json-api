@@ -30,7 +30,7 @@ function PostUser() {
 
   return (
     <div className="postUserWrapper">
-      Post a New User
+      <div>Add New User</div>
       <input
         placeholder="Enter First Name"
         value={userFirst}

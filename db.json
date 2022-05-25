@@ -3,8 +3,20 @@
     {
       "first_name": "nugget",
       "last_name": "chicken",
-      "email": "chicken@yahoo.com",
+      "email": "duhhh",
       "id": 1
+    },
+    {
+      "first_name": "Alyssa",
+      "last_name": "Klepper",
+      "email": "",
+      "id": 3
+    },
+    {
+      "first_name": "zack",
+      "last_name": "hungry",
+      "email": "aaaaa",
+      "id": 4
     }
   ],
   "posts": [

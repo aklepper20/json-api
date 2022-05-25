@@ -5,7 +5,7 @@ import PostUser from "./components/PostUser";
 function App() {
   return (
     <>
-      <h2>Api User Profiles</h2>
+      <h1>API USERS</h1>
       <div className="App">
         <PostUser />
         <GetUser />

@@ -12,7 +12,7 @@ function GetUser() {
     const getUsers = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:3000/users?_sort=first_name&_order=asc'"
+          "http://localhost:3000/users?_sort=last_name&_order=asc'"
         );
         const users = response.data;
         setGetUsers(users);
@@ -24,29 +24,26 @@ function GetUser() {
   }, [getUser]);
 
   return (
-    <>
-      <h3>Get All Users from Api Endpoint</h3>
-      <div className="getUserWrapper">
-        {getUser.length !== 0 ? (
-          getUser.map((user) => {
-            return (
-              <div className="getUserMain">
-                <User
-                  key={user.id}
-                  id={user.id}
-                  first={user.first_name}
-                  last={user.last_name}
-                  name={`${user.first_name} ${user.last_name}`}
-                  email={user.email}
-                />
-              </div>
-            );
-          })
-        ) : (
-          <h3>No users available. Please add a user.</h3>
-        )}
-      </div>
-    </>
+    <div className="getUserWrapper">
+      {getUser.length !== 0 ? (
+        getUser.map((user) => {
+          return (
+            <div className="getUserMain">
+              <User
+                key={user.id}
+                id={user.id}
+                first={user.first_name}
+                last={user.last_name}
+                name={`${user.first_name} ${user.last_name}`}
+                email={user.email}
+              />
+            </div>
+          );
+        })
+      ) : (
+        <h3>No users available. Please add a user.</h3>
+      )}
+    </div>
   );
 }
 

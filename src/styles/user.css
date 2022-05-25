@@ -1,15 +1,28 @@
 .delete {
   text-align: right;
+  font-weight: bold;
+}
+
+.delete:hover {
+  background-color: #cce3de;
+  border-radius: 4px;
+  padding: 3px;
+  cursor: pointer;
 }
 
 .userWrapper {
   position: relative;
   height: fit-content;
   width: 220px;
-  background-color: blue;
+  background-color: #f6fff8;
   margin: 10px;
   padding: 8px;
   border-radius: 10px;
+  box-shadow: 9px 6px 9px 1px rgba(0, 0, 0, 0.15);
+}
+
+.editInput {
+  border: 2px solid #eaf4f4;
 }
 
 .actionsWrapper {
@@ -20,6 +33,10 @@
 
 .padding {
   padding: 3px;
+}
+
+.name {
+  font-weight: 700;
 }
 
 .email {
@@ -37,6 +54,7 @@
 }
 
 .edit:hover {
-  background-color: aliceblue;
+  background-color: #cce3de;
   border-radius: 4px;
+  cursor: pointer;
 }

@@ -1,8 +1,5 @@
 .getUserWrapper {
-  width: 100vw;
-  /* height: fit-content; */
   display: flex;
-  background-color: yellow;
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px 0;

@@ -63,20 +63,17 @@ function User({ id, name, email, first, last }) {
           X
         </div>
       </div>
-      <div className="padding">{name}</div>
+      <div className="name padding">{name}</div>
       <div className="editWrapper">
         {editOpen ? (
-          <>
-            <input
-              placeholder={email}
-              value={updateEmail}
-              onChange={(e) => setUpdateEmail(e.target.value)}
-            />
-          </>
+          <input
+            className="editInput"
+            placeholder={email}
+            value={updateEmail}
+            onChange={(e) => setUpdateEmail(e.target.value)}
+          />
         ) : (
-          <>
-            <div className="padding email">{email}</div>
-          </>
+          <div className="padding email">{email}</div>
         )}
       </div>
     </div>
