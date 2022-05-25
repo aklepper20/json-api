@@ -25,7 +25,7 @@ function GetUser() {
     <>
       <h3>Get All Users from Api Endpoint</h3>
       <div className="getUserWrapper">
-        {getUser.map((user) => {
+        {[...getUser].reverse().map((user) => {
           return (
             <div className="getUserMain">
               <User

@@ -3,7 +3,6 @@ import { useState } from "react";
 import "../styles/postUser.css";
 
 function PostUser() {
-  const { v4: uuidv4 } = require("uuid");
   const axios = require("axios");
 
   const [userFirst, setUserFirst] = useState("");
