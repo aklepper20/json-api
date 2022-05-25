@@ -11,14 +11,6 @@ function User({ id, name, email, first, last }) {
   const [editOpen, setEditOpen] = useState(false);
   const [timer] = useState();
 
-  const alertConfirmation = () => {
-    timer = setTimeout(() => alert("Delete User Successful"), 1000);
-  };
-
-  useEffect(() => {
-    return () => clearTimeout(timer);
-  }, []);
-
   const handleDelete = (id) => {
     axios
       .delete(`http://localhost:3000/users/${id}/`)
@@ -29,11 +21,7 @@ function User({ id, name, email, first, last }) {
         console.log(error);
       });
 
-    alertConfirmation();
-  };
-
-  const alertUpdate = () => {
-    setTimeout(() => alert("Updated Email Successfully"), 1000);
+    alert("Delete User Successful");
   };
 
   const handleUpdate = (id) => {
@@ -51,7 +39,7 @@ function User({ id, name, email, first, last }) {
       });
 
     setEditOpen(!editOpen);
-    alertUpdate();
+    alert("Updated Email Successfully");
   };
 
   return (

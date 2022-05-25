@@ -1,18 +1,6 @@
 {
   "users": [
     {
-      "first_name": "Robert",
-      "last_name": "Schwartz",
-      "email": "update",
-      "id": 1
-    },
-    {
-      "first_name": "Robert",
-      "last_name": "Brown",
-      "email": "fghj",
-      "id": 4
-    },
-    {
       "first_name": "Roger",
       "last_name": "Bacon",
       "email": "bacon",
@@ -47,12 +35,6 @@
       "last_name": "suuup",
       "email": "",
       "id": 19
-    },
-    {
-      "first_name": "jon",
-      "last_name": "jon",
-      "email": "",
-      "id": 20
     }
   ],
   "posts": [
