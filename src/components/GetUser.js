@@ -33,6 +33,8 @@ function GetUser() {
               <User
                 key={user.id}
                 id={user.id}
+                first={user.first_name}
+                last={user.last_name}
                 name={`${user.first_name} ${user.last_name}`}
                 email={user.email}
               />

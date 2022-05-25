@@ -4,7 +4,7 @@ import "../styles/user.css";
 import editIcon from "../edit-icon.png";
 import checkIcon from "../icons-checked.png";
 
-function User({ id, name, email }) {
+function User({ id, name, email, first, last }) {
   const axios = require("axios");
 
   const [updateEmail, setUpdateEmail] = useState("");
@@ -24,7 +24,9 @@ function User({ id, name, email }) {
   const handleUpdate = (id) => {
     axios
       .put(`http://localhost:3000/users/${id}/`, {
-        email: "freddyb34@yahoo.com",
+        first_name: first,
+        last_name: last,
+        email: updateEmail,
       })
       .then((resp) => {
         console.log(resp.data);
@@ -32,39 +34,45 @@ function User({ id, name, email }) {
       .catch((error) => {
         console.log(error);
       });
+
+    setEditOpen(!editOpen);
   };
 
   return (
     <div className="userWrapper">
-      <div className="delete" onClick={() => handleDelete(id)}>
-        X
+      <div className="actionsWrapper">
+        {editOpen ? (
+          <img
+            className="checked"
+            onClick={() => handleUpdate(id)}
+            src={checkIcon}
+            alt="Submit Updated Email"
+          />
+        ) : (
+          <img
+            className="edit"
+            onClick={() => setEditOpen(!editOpen)}
+            src={editIcon}
+            alt="Edit Email"
+          />
+        )}
+        <div className="delete" onClick={() => handleDelete(id)}>
+          X
+        </div>
       </div>
       <div className="padding">{name}</div>
       <div className="editWrapper">
-        {/* <div className="padding email" onClick={() => handleUpdate(id)}>
-          {email}
-        </div> */}
         {editOpen ? (
           <>
-            <input placeholder={email} />
-            <img
-              className="checked"
-              onClick={() => setEditOpen(!editOpen)}
-              src={checkIcon}
-              alt="Submit Updated Email"
+            <input
+              placeholder={email}
+              value={updateEmail}
+              onChange={(e) => setUpdateEmail(e.target.value)}
             />
           </>
         ) : (
           <>
-            <div className="padding email" onClick={() => handleUpdate(id)}>
-              {email}
-            </div>
-            <img
-              className="edit"
-              onClick={() => setEditOpen(!editOpen)}
-              src={editIcon}
-              alt="Edit Email"
-            />
+            <div className="padding email">{email}</div>
           </>
         )}
       </div>

@@ -12,6 +12,12 @@
   border-radius: 10px;
 }
 
+.actionsWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .padding {
   padding: 3px;
 }
@@ -33,7 +39,4 @@
 .edit:hover {
   background-color: aliceblue;
   border-radius: 4px;
-}
-
-.checked {
 }
