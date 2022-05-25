@@ -95,6 +95,18 @@
       "first_name": "ffff",
       "last_name": "fff",
       "email": "fff"
+    },
+    {
+      "id": 15,
+      "first_name": "hi",
+      "last_name": "hello",
+      "email": "fdsfjk"
+    },
+    {
+      "first_name": "nug",
+      "last_name": "nug",
+      "email": "nug",
+      "id": 16
     }
   ],
   "posts": [

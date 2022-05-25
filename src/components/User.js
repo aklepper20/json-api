@@ -5,7 +5,7 @@ function User({ name, email }) {
   return (
     <div className="userWrapper">
       <div className="padding">{name}</div>
-      <div className="padding">{email}</div>
+      <div className="padding email">{email}</div>
     </div>
   );
 }

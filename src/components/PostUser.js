@@ -9,12 +9,10 @@ function PostUser() {
   const [userFirst, setUserFirst] = useState("");
   const [userLast, setUserLast] = useState("");
   const [userEmail, setUserEmail] = useState("");
-  const [uuid, setUuid] = useState(uuidv4());
 
   const handleSubmit = () => {
     axios
       .post("http://localhost:3000/users", {
-        id: uuid,
         first_name: userFirst,
         last_name: userLast,
         email: userEmail,
@@ -29,7 +27,6 @@ function PostUser() {
     setUserFirst("");
     setUserLast("");
     setUserEmail("");
-    setUuid("");
   };
 
   return (
