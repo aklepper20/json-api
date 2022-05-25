@@ -11,7 +11,9 @@ function GetUser() {
   useEffect(() => {
     const getUsers = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/users");
+        const response = await axios.get(
+          "http://localhost:3000/users?_sort=first_name&_order=asc'"
+        );
         const users = response.data;
         setGetUsers(users);
       } catch (err) {
@@ -25,11 +27,12 @@ function GetUser() {
     <>
       <h3>Get All Users from Api Endpoint</h3>
       <div className="getUserWrapper">
-        {[...getUser].reverse().map((user) => {
+        {getUser.map((user) => {
           return (
             <div className="getUserMain">
               <User
                 key={user.id}
+                id={user.id}
                 name={`${user.first_name} ${user.last_name}`}
                 email={user.email}
               />

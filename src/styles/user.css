@@ -1,6 +1,11 @@
+.delete {
+  text-align: right;
+}
+
 .userWrapper {
+  position: relative;
   height: fit-content;
-  width: 200px;
+  width: 220px;
   background-color: blue;
   margin: 10px;
   padding: 8px;

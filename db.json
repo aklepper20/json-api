@@ -13,12 +13,6 @@
       "email": "lucyb56@gmail.com"
     },
     {
-      "id": 3,
-      "first_name": "Anna",
-      "last_name": "Smith",
-      "email": "annasmith23@gmail.com"
-    },
-    {
       "id": 4,
       "first_name": "Robert",
       "last_name": "Brown",
@@ -103,16 +97,16 @@
       "email": "fdsfjk"
     },
     {
-      "first_name": "nug",
-      "last_name": "nug",
-      "email": "nug",
-      "id": 16
-    },
-    {
       "first_name": "barb",
       "last_name": "barb",
       "email": "barb",
       "id": 17
+    },
+    {
+      "first_name": "apple",
+      "last_name": "aaaa",
+      "email": "ggg",
+      "id": 18
     }
   ],
   "posts": [
