@@ -25,12 +25,6 @@
       "email": "rogerbacon12@yahoo.com"
     },
     {
-      "id": 6,
-      "first_name": "Ronny",
-      "last_name": "Jackson",
-      "email": "ronni@gmail.com"
-    },
-    {
       "id": 7,
       "first_name": "Alex",
       "last_name": "Beck",
@@ -55,32 +49,8 @@
       "email": "JJ12@yahoo.com"
     },
     {
-      "id": "a9492a3a-8b2a-43f9-886f-6949714ca832",
-      "first_name": "name",
-      "last_name": "robert",
-      "email": "alyyyyy"
-    },
-    {
-      "id": 11,
-      "first_name": "michael",
-      "last_name": "ron",
-      "email": "alll"
-    },
-    {
-      "id": 12,
-      "first_name": "fdsf",
-      "last_name": "fds",
-      "email": "fdsfd"
-    },
-    {
       "id": 13,
       "first_name": "dsafds",
-      "last_name": "fdsfds",
-      "email": "fdsfds"
-    },
-    {
-      "id": "43b24fe4-c352-4261-b6f2-78930f329688",
-      "first_name": "fdsfds",
       "last_name": "fdsfds",
       "email": "fdsfds"
     },
@@ -97,16 +67,22 @@
       "email": "fdsfjk"
     },
     {
-      "first_name": "barb",
-      "last_name": "barb",
-      "email": "barb",
-      "id": 17
-    },
-    {
       "first_name": "apple",
       "last_name": "aaaa",
       "email": "ggg",
       "id": 18
+    },
+    {
+      "first_name": "sup",
+      "last_name": "suuup",
+      "email": "",
+      "id": 19
+    },
+    {
+      "first_name": "jon",
+      "last_name": "jon",
+      "email": "",
+      "id": 20
     }
   ],
   "posts": [

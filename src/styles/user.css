@@ -19,3 +19,21 @@
 .email {
   font-size: small;
 }
+
+.editWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit {
+  font-size: 10px;
+}
+
+.edit:hover {
+  background-color: aliceblue;
+  border-radius: 4px;
+}
+
+.checked {
+}
