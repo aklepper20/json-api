@@ -4,9 +4,9 @@ import { useEffect, useState } from "react";
 import "../styles/getUser.css";
 
 function GetUser() {
-  const [getUser, setGetUsers] = useState([]);
-
   const axios = require("axios");
+
+  const [getUser, setGetUsers] = useState([]);
 
   useEffect(() => {
     const getUsers = async () => {
@@ -19,23 +19,25 @@ function GetUser() {
       }
     };
     getUsers();
-  }, []);
+  }, [getUser]);
 
   return (
-    <div className="getUserWrapper">
-      {getUser.map((user) => {
-        return (
-          <div className="getUserMain">
-            <User
-              key={user.id}
-              id={user.id}
-              name={`${user.first_name} ${user.last_name}`}
-              email={user.email}
-            />
-          </div>
-        );
-      })}
-    </div>
+    <>
+      <h3>Get All Users from Api Endpoint</h3>
+      <div className="getUserWrapper">
+        {getUser.map((user) => {
+          return (
+            <div className="getUserMain">
+              <User
+                key={user.id}
+                name={`${user.first_name} ${user.last_name}`}
+                email={user.email}
+              />
+            </div>
+          );
+        })}
+      </div>
+    </>
   );
 }
 
