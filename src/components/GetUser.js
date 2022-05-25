@@ -27,20 +27,24 @@ function GetUser() {
     <>
       <h3>Get All Users from Api Endpoint</h3>
       <div className="getUserWrapper">
-        {getUser.map((user) => {
-          return (
-            <div className="getUserMain">
-              <User
-                key={user.id}
-                id={user.id}
-                first={user.first_name}
-                last={user.last_name}
-                name={`${user.first_name} ${user.last_name}`}
-                email={user.email}
-              />
-            </div>
-          );
-        })}
+        {getUser.length !== 0 ? (
+          getUser.map((user) => {
+            return (
+              <div className="getUserMain">
+                <User
+                  key={user.id}
+                  id={user.id}
+                  first={user.first_name}
+                  last={user.last_name}
+                  name={`${user.first_name} ${user.last_name}`}
+                  email={user.email}
+                />
+              </div>
+            );
+          })
+        ) : (
+          <h3>No users available. Please add a user.</h3>
+        )}
       </div>
     </>
   );

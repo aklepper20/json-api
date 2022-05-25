@@ -1,40 +1,10 @@
 {
   "users": [
     {
-      "first_name": "Roger",
-      "last_name": "Bacon",
-      "email": "bacon",
-      "id": 5
-    },
-    {
-      "id": 13,
-      "first_name": "dsafds",
-      "last_name": "fdsfds",
-      "email": "fdsfds"
-    },
-    {
-      "id": 14,
-      "first_name": "ffff",
-      "last_name": "fff",
-      "email": "fff"
-    },
-    {
-      "id": 15,
-      "first_name": "hi",
-      "last_name": "hello",
-      "email": "fdsfjk"
-    },
-    {
-      "first_name": "apple",
-      "last_name": "aaaa",
-      "email": "ggg",
-      "id": 18
-    },
-    {
-      "first_name": "sup",
-      "last_name": "suuup",
-      "email": "",
-      "id": 19
+      "first_name": "nugget",
+      "last_name": "chicken",
+      "email": "chicken@yahoo.com",
+      "id": 1
     }
   ],
   "posts": [

@@ -9,7 +9,6 @@ function User({ id, name, email, first, last }) {
 
   const [updateEmail, setUpdateEmail] = useState("");
   const [editOpen, setEditOpen] = useState(false);
-  const [timer] = useState();
 
   const handleDelete = (id) => {
     axios
