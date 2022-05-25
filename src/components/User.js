@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import "../styles/user.css";
 import editIcon from "../edit-icon.png";
@@ -9,6 +9,15 @@ function User({ id, name, email, first, last }) {
 
   const [updateEmail, setUpdateEmail] = useState("");
   const [editOpen, setEditOpen] = useState(false);
+  const [timer] = useState();
+
+  const alertConfirmation = () => {
+    timer = setTimeout(() => alert("Delete User Successful"), 1000);
+  };
+
+  useEffect(() => {
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleDelete = (id) => {
     axios
@@ -19,6 +28,12 @@ function User({ id, name, email, first, last }) {
       .catch((error) => {
         console.log(error);
       });
+
+    alertConfirmation();
+  };
+
+  const alertUpdate = () => {
+    setTimeout(() => alert("Updated Email Successfully"), 1000);
   };
 
   const handleUpdate = (id) => {
@@ -36,6 +51,7 @@ function User({ id, name, email, first, last }) {
       });
 
     setEditOpen(!editOpen);
+    alertUpdate();
   };
 
   return (
